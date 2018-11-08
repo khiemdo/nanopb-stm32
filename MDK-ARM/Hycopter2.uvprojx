@@ -10,6 +10,7 @@
       <TargetName>Hycopter2</TargetName>
       <ToolsetNumber>0x4</ToolsetNumber>
       <ToolsetName>ARM-ADS</ToolsetName>
+      <pCCUsed>5060750::V5.06 update 6 (build 750)::ARMCC</pCCUsed>
       <uAC6>0</uAC6>
       <TargetOption>
         <TargetCommonOption>
@@ -337,7 +338,7 @@
               <MiscControls></MiscControls>
               <Define>USE_HAL_DRIVER,STM32F303xE</Define>
               <Undefine></Undefine>
-              <IncludePath>../Inc;../Drivers/STM32F3xx_HAL_Driver/Inc;../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy;../Drivers/CMSIS/Device/ST/STM32F3xx/Include;../Middlewares/Third_Party/FatFs/src;../Drivers/CMSIS/Include</IncludePath>
+              <IncludePath>../Inc;../Drivers/STM32F3xx_HAL_Driver/Inc;../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy;../Drivers/CMSIS/Device/ST/STM32F3xx/Include;../Middlewares/Third_Party/FatFs/src;../Drivers/CMSIS/Include;../nanopb;../simple</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -385,6 +386,41 @@
               <FileName>startup_stm32f303xe.s</FileName>
               <FileType>2</FileType>
               <FilePath>startup_stm32f303xe.s</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>simple</GroupName>
+          <Files>
+            <File>
+              <FileName>simple_pb.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\simple\simple_pb.c</FilePath>
+            </File>
+            <File>
+              <FileName>test_simple.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\simple\test_simple.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>nanopb</GroupName>
+          <Files>
+            <File>
+              <FileName>pb_common.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\nanopb\pb_common.c</FilePath>
+            </File>
+            <File>
+              <FileName>pb_decode.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\nanopb\pb_decode.c</FilePath>
+            </File>
+            <File>
+              <FileName>pb_encode.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\nanopb\pb_encode.c</FilePath>
             </File>
           </Files>
         </Group>
